@@ -1,3 +1,6 @@
+.my-div-style{
+    margin-top: 6rem;
+}
 body,#wrapper{
     display: flex;
     flex-direction: column;
@@ -7,3 +10,4 @@ body,#wrapper{
 footer{
     margin-top: auto;
 }
+
