@@ -31,8 +31,13 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">サインアップ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">ログイン</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link {% block active_signup%}{%endblock %}"
+                        href="{% url 'account_signup' %}">サインアップ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% block active_login %}{% endblock %}"
+                               href="{% url 'account_login' %}">ログイン</a></li>
                     </ul>
                 </div>
             </div>
