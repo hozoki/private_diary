@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'django_bootstrap5',
 ]
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -133,7 +134,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'accounts.CustomUser'
+
 
 MESSAGE_TAGS = {
     messages.ERROR:'alert alert-danger',
